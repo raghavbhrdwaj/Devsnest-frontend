@@ -1,0 +1,44 @@
+.outerCircle {
+	/* position: absolute; */
+	height: 500px;
+	width: 500px;
+	border-radius: 50%;
+	background-color: red;
+	border: 60px solid red;
+}
+
+.innerCircle {
+	position: absolute;
+	height: 495px;
+	width: 495px;
+	border-radius: 50%;
+	background-color: white;
+}
+
+.hand {
+	position: absolute;
+	border-left: 5px solid black;
+	height: 45%;
+	top: 50%;
+	left: 50%;
+	transform-origin: top;
+}
+
+@keyframes rot {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.second {
+	animation: rot 60s infinite linear;
+}
+.minute {
+	animation: rot 1000ms infinite linear;
+}
+.hour {
+	animation: rot 3600ms infinite linear;
+}
